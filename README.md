@@ -2,30 +2,28 @@
 
 ## Section 1: Multiple Choice Questions
 
-1. **Which of the following are MySQL comments?**  
-   **Answer:** A, B & C  
+1. **Which of the following are MySQL comments?**    
    - A. `# this is the comment`  
    - B. `-- this is the comment`  
    - C. `/* this is the comment */`  
    - D. `<!-- this is the comment →`
+   **Answer:** A, B & C
 
 2. **The tester receives a new build with changes affecting existing functionalities. What kind of additional testing is conducted to uncover issues in the existing functionalities?**  
-   **Answer:** D. Regression testing
    - A. Integration testing
    - B. Positive testing
    - C. Sanity testing
    - D. Regression testing
+   **Answer:** D. Regression testing
 
-
-3. **Which of the following approaches will a tester adopt when confronted with the challenge of inadequate input documentation for testing?**  
-   **Answer:** D. Both A and B  
+3. **Which of the following approaches will a tester adopt when confronted with the challenge of inadequate input documentation for testing?**    
    - A. Rely on screenshots and the previous versions of the application  
    - B. Talk to the developer and business  
    - C. Make a document based on experience with another application
    - D. Both A and B
+   **Answer:** D. Both A and B
 
-4. **How can an application run on 2 different Android devices using Appium in parallel?**  
-   **Answer:** D  
+4. **How can an application run on 2 different Android devices using Appium in parallel?**    
    - A. Start two Appium servers on the same port number. Use this URL in both of the scripts
         and run them in parallel using TestNG.
    - B. This is not possible.
@@ -33,19 +31,20 @@
         scripts.
    - D. Start two Appium servers on different ports. Use the URL in both of the scripts and run
          them in parallel using TestNG.
+   **Answer:** D
 
 
 5. **Consider the following HTML code. What is the XPath expression to find the label for the input element with `id="name"`?**  
-   **Answer:** A. `//label[@for='name']`
    - A. //label[@for='name']
    - B. ancestor::label[1]
    - C. preceding-sibling::label[2]
    - D. A and C
+   **Answer:** A. `//label[@for='name']`
 
 
-## 🔌 Section 2: API Test
+## Section 2: API Test
 
-### 🛠 Tool Used: Postman
+### Tool Used: Postman
 
 ### API Reference: [GoREST API](https://gorest.co.in)
 
@@ -67,8 +66,6 @@
 ### Files Included
 
 - `**API_TEST.postman_collection.json**`: This is the Postman collection file included in the repository. It contains automated API test scripts for the scenarios defined in this assessment.
-
----
 
 ### How to Run the Test Collection
 
