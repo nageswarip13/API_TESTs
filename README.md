@@ -7,6 +7,7 @@
    - B. `-- this is the comment`  
    - C. `/* this is the comment */`  
    - D. `<!-- this is the comment →`
+   
    **Answer:** A, B & C
 
 2. **The tester receives a new build with changes affecting existing functionalities. What kind of additional testing is conducted to uncover issues in the existing functionalities?**  
@@ -14,14 +15,16 @@
    - B. Positive testing
    - C. Sanity testing
    - D. Regression testing
-   **Answer:** D. Regression testing
+   
+   **Answer:** D
 
 3. **Which of the following approaches will a tester adopt when confronted with the challenge of inadequate input documentation for testing?**    
    - A. Rely on screenshots and the previous versions of the application  
    - B. Talk to the developer and business  
    - C. Make a document based on experience with another application
    - D. Both A and B
-   **Answer:** D. Both A and B
+   
+   **Answer:** D
 
 4. **How can an application run on 2 different Android devices using Appium in parallel?**    
    - A. Start two Appium servers on the same port number. Use this URL in both of the scripts
@@ -31,6 +34,7 @@
         scripts.
    - D. Start two Appium servers on different ports. Use the URL in both of the scripts and run
          them in parallel using TestNG.
+   
    **Answer:** D
 
 
@@ -39,7 +43,8 @@
    - B. ancestor::label[1]
    - C. preceding-sibling::label[2]
    - D. A and C
-   **Answer:** A. `//label[@for='name']`
+   
+   **Answer:** A
 
 
 ## Section 2: API Test
