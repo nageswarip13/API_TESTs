@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "9ed7af10-104f-43a6-ba5f-a394f0b8a1eb",
+		"name": "API_TEST",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "45148872",
+		"_collection_link": "https://nageswariprakash.postman.co/workspace/NageswariPrakash's-Workspace~0cbb99df-7ee5-4e37-88f2-17436ab3d9d5/collection/45148872-9ed7af10-104f-43a6-ba5f-a394f0b8a1eb?action=share&source=collection_link&creator=45148872"
+	},
+	"item": [
+		{
+			"name": "Create New User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"ID is numerical\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.id).to.be.a('number');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 66158e0e72c11d0853df07a02b5cec856572442cf68f0c86b9a3dcc44ca235e7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Nag User\",\r\n  \"gender\": \"male\",\r\n  \"email\": \"nag@gmail.com\",\r\n  \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users",
+				"description": "Create New User"
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Status of First User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is either active or inactive\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect([\"active\", \"inactive\"]).to.include(jsonData[0].status);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users"
+			},
+			"response": []
+		}
+	]
+}
